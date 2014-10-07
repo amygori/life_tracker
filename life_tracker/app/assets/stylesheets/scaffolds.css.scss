@@ -6,10 +6,19 @@ body {
   line-height: 18px;
 }
 
-p, ol, ul, td {
+p, ol, ul {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+}
+
+td {
+  @extend p;
+  width: 50px;
+  .title {
+    width:100px;
+  }
+
 }
 
 pre {
